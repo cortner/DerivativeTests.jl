@@ -1,6 +1,6 @@
 module DerivativeTests
 
-using Printf
+using Printf, LinearAlgebra
 
 export fdtest, fdtest_hessian
 
