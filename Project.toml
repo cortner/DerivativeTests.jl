@@ -1,0 +1,13 @@
+name = "DerivativeTests"
+uuid = "770e6918-8051-11e9-0312-35ef38a9a053"
+authors = ["Christoph Ortner <c.ortner@warwick.ac.uk>"]
+version = "0.1.0"
+
+[deps]
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
