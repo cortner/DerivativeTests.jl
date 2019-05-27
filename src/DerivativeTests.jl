@@ -31,7 +31,7 @@ fdtest(F, dF, x; kwargs...) =
 fdtest(F, dF, x::AbstractVector, F0::Number, dF0::AbstractVector; kwargs...) =
    fdtest(x -> [F(x)], Matrix(dF(x)'), x, [F0], Matrix(dF0'); kwargs...)
 
-# the actual finite-difference test implementation 
+# the actual finite-difference test implementation
 function fdtest(F, dF, x::AbstractVector, F0::AbstractVector, dF0::AbstractMatrix;
                verbose=true, h0 = 0.1, prange=2:11, tol = 1e-3)
    errors = Float64[]
